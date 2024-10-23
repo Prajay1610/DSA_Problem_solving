@@ -49,14 +49,10 @@ public class longestSubarraySum {
         int left=0,right=0;
         while(right<n){//while right is less than n run this loop
 
-            
+            //calc sum 
             sum+=arr[right];
            
-            //now if the sum becomes equal to k then
-           if(sum==k){
-            max_len=Math.max(max_len,(right-left)+1);
-
-           }
+            
 
            //if sum becomes greater than k -->trim the array from left to reduce sum
            while(sum>k && left<=right){
@@ -64,8 +60,13 @@ public class longestSubarraySum {
             left++;
            }
 
-           //increment right first and then sum it
-            //make sure we are inside the bounds of array
+           //now if the sum becomes equal to k then
+           if(sum==k){
+            max_len=Math.max(max_len,(right-left)+1);
+
+           }
+
+           //if the sum <k then increment right 
             right++;
            
             

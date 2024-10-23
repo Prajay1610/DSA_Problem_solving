@@ -18,6 +18,7 @@ void reversearray(vector<int> &arr){
         e--;
     }
     
+    reverse(arr[0],arr[arr.size()-1]);
 }
 void printarray(vector<int> &v){
     for(int i=0;i<v.size();i++){
