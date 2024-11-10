@@ -1,8 +1,9 @@
+
 import java.util.Arrays;
 import java.util.HashMap;
 
 public class String_anangrams {
-    /*        sorting both the strings required */
+    /*sorting both the strings required */
     /*T.C ==> O(mlogm +nlogn)*/
      public static void main1 (String [] args) {  
         String str1="Brag";  
@@ -25,7 +26,7 @@ public class String_anangrams {
             Arrays.sort(string1);  
             Arrays.sort(string2);  
   
-            //Comparing both the arrays using in-built function equals ()  
+            //Comparing both the arrays using in-built function equals()  
             if(Arrays.equals(string1, string2) == true) {  
                 System.out.println("Both the strings are anagram");  
             }  
